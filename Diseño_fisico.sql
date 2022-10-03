@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS Producto (
 ) ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS Seccion (
-	id_seccion INT AUTO_INCREMENT,
+	id_seccion INT AUTO_INCREMENT PRIMARY KEY,
     nombre_seccion VARCHAR(100),
     descripcion_seccion VARCHAR(500)
 ) ENGINE = INNODB;
