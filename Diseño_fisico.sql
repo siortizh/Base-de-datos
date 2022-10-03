@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS Orden (
 );
 
 CREATE TABLE IF NOT EXISTS Registro_Orden (
-id_registro_orden INT AUTO_INCREMENT,
+id_registro_orden INT AUTO_INCREMENT PRIMARY KEY,
 id_orden INT,
 cantidad_ordenes INT
 );
