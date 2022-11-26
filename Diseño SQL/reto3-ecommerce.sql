@@ -19,16 +19,16 @@ CREATE TABLE IF NOT EXISTS Customer (
 ) ENGINE = INNODB;
 
 # Insert customer records
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('789', 'LAURA',' LALI@GMAIL.COM', '305896241', 'Colombia', 'Medellín', 'Carrera 56A No. 51 - 81');	
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('456', 'MARIA',' MARIA@GMAIL.COM', '317894562', 'Colombia', 'Bogotá', 'Carrera 7A No. 32 - 63 piso 2');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('123', 'JUAN PABLO',' JUANPA@GMAIL.COM', '320584679', 'Canada', 'Otawa', '1093 Bay Street');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('741', 'ISABELA',' ISABELA@GMAIL.COM', '314602578', 'Brasil', 'Rio de Janeiro', 'Praça Mozar Firmeza 761');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('852', 'JUAN',' JUAN@GMAIL.COM', '0348952176', 'Estados Unidos', 'Washington', 'Carr. #3 Km 22.01-Barrio Cienaga Baja');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('963', 'SAMUEL',' SAMUEL@GMAIL.COM', '362587492', 'Colombia', 'Cali', 'CARRERA 42 No.5C-48 Barrio Tequendama');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('753', 'SOFIA',' SOFIA@GMAIL.COM', '305482631', 'Estados Unidos', 'New York', '251 West Route 59 Nanuet NY 10954');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('951', 'NICOLAS',' NICOLAS@GMAIL.COM', '314795864', 'Mexico', 'Ciudad de Mexico', 'BOSQUE DE BIRMANIA NO. 66, BOSQUES DE ARAGON, 57170');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('412', 'JERONIMO',' JERONIMO@GMAIL.COM', '325849621', 'Canada', 'Toronto', '50 Weir Crescent Ontairo');
-INSERT INTO Cliente (password, name, mail, phone, country, city, direction) VALUES ('896', 'SARA',' SARA@GMAIL.COM', '605487215', 'Colombia', 'Armenia', 'CALLE 23 No. 12-11');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('789', 'LAURA',' LALI@GMAIL.COM', '305896241', 'Colombia', 'Medellín', 'Carrera 56A No. 51 - 81');	
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('456', 'MARIA',' MARIA@GMAIL.COM', '317894562', 'Colombia', 'Bogotá', 'Carrera 7A No. 32 - 63 piso 2');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('123', 'JUAN PABLO',' JUANPA@GMAIL.COM', '320584679', 'Canada', 'Otawa', '1093 Bay Street');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('741', 'ISABELA',' ISABELA@GMAIL.COM', '314602578', 'Brasil', 'Rio de Janeiro', 'Praça Mozar Firmeza 761');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('852', 'JUAN',' JUAN@GMAIL.COM', '0348952176', 'Estados Unidos', 'Washington', 'Carr. #3 Km 22.01-Barrio Cienaga Baja');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('963', 'SAMUEL',' SAMUEL@GMAIL.COM', '362587492', 'Colombia', 'Cali', 'CARRERA 42 No.5C-48 Barrio Tequendama');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('753', 'SOFIA',' SOFIA@GMAIL.COM', '305482631', 'Estados Unidos', 'New York', '251 West Route 59 Nanuet NY 10954');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('951', 'NICOLAS',' NICOLAS@GMAIL.COM', '314795864', 'Mexico', 'Ciudad de Mexico', 'BOSQUE DE BIRMANIA NO. 66, BOSQUES DE ARAGON, 57170');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('412', 'JERONIMO',' JERONIMO@GMAIL.COM', '325849621', 'Canada', 'Toronto', '50 Weir Crescent Ontairo');
+INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('896', 'SARA',' SARA@GMAIL.COM', '605487215', 'Colombia', 'Armenia', 'CALLE 23 No. 12-11');
 
 
 CREATE TABLE IF NOT EXISTS Order (
