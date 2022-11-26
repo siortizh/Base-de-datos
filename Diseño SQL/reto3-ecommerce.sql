@@ -39,20 +39,20 @@ CREATE TABLE IF NOT EXISTS Orders (
     payment VARCHAR(50),
     delivery_date INT,
     state VARCHAR(50),
-    FOREIGN KEY (id_cliente)
-			REFERENCES Cliente (id_cliente)
+    FOREIGN KEY (id_customer)
+			REFERENCES Customer (id_customer)
 			ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS Order_details (
 	id_order_details INT AUTO_INCREMENT,
-	id_order INT,
+	id_orders INT,
 	id_product INT,
 	total_price INT,
 	quantity_product INT,
-	PRIMARY KEY (id_order_details , id_order , id_product),
-	FOREIGN KEY (id_order)
-			REFERENCES Orders (id_order)
+	PRIMARY KEY (id_order_details , id_orders , id_product),
+	FOREIGN KEY (id_orders)
+			REFERENCES Orders (id_orders)
 			ON UPDATE RESTRICT ON DELETE CASCADE,
 	FOREIGN KEY (id_product)
 			REFERENCES Product (id_product)
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS Product_category (
 # CATEGORY
 
 CREATE TABLE IF NOT EXISTS Category (
-	id_category INT AUTO_INCREMENT PRIMARY KEY,
+	id_category INT AUTO_INCREMENT,
     category_name VARCHAR(100),
     category_description VARCHAR(500)
 ) ENGINE = INNODB;
@@ -127,3 +127,16 @@ INSERT INTO Category (category_name, category_description) VALUES ('Muebles', 'S
 INSERT INTO Category (category_name, category_description) VALUES ('Zapatos', 'Tenis mujer, Tenis hombre, Tenis infantiles, Zapatos mujer, Zapatos hombre, Zapatos niña, Zapatos niño');
 INSERT INTO Category (category_name, category_description) VALUES ('Dormitorio', 'Ropa de cama, Colchones, Complementos de cama, Tipos de camas, Muebles, Ropa de cama infantil, Ropa de cama juvenil, Habitacion para niños');
 INSERT INTO Category (category_name, category_description) VALUES ('Celulares', 'Marcas, Accesorios, Warables');
+
+
+
+CREATE TABLE IF NOT EXISTS Cart (
+	id_cart INT AUTO_INCREMENT PRIMARY KEY,
+    id_orders INT,
+    total_price INT,
+	quantity_products INT,
+    PRIMARY KEY (id_cart, id_orders),
+	FOREIGN KEY (id_orders)
+			REFERENCES Orders (id_orders)
+			ON UPDATE RESTRICT ON DELETE CASCADE
+) ENGINE = INNODB;
