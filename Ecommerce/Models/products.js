@@ -58,7 +58,7 @@ module.exports = {
 //Crear un nuevo carrito 
 CreateKart(CustomerId, confirmation) {
   return new Promise((resolve, reject) => {
-      conexion.query(`insert into CustomerKart(CustomerId,confirmation, estatus) values(?,?, "Purchasing") `,
+      conexion.query(`insert into CustomerKart(CustomerId,confirmation, status) values(?,?, "Purchasing") `,
           [CustomerId, confirmation], (err, results) => {
               if (err) reject(err);
               else resolve(results.insertId);
