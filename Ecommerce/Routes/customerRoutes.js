@@ -7,16 +7,16 @@ var api = express.Router();
  
 // POST para guardar nuevos documentos
 // U
-api.post('/customer', customerController.saveCustomer);
+api.post('/customer/create', customerController.saveCustomer);
  
 // GET para conseguir documentos
-api.get('/customer', customerController.getCustomers);
-api.get('/customer/:id', customerController.getCustomer);
+api.get('/customer/read', customerController.getCustomers);
+api.get('/customer/search/:id', customerController.getCustomer);
  
 // PUT para actualizar documentos
-api.put('/customer/:id', customerController.updateNota);
+api.put('/customer/update/:id', customerController.updateNota);
  
 // DELETE para eliminar documentos
-api.delete('/customer/:id', customerController.deleteCustomer);
+api.delete('/customer/delete/:id', customerController.deleteCustomer);
  
 module.exports = api;
