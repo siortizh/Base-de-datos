@@ -31,7 +31,7 @@ INSERT INTO Customer (password, name, mail, phone, country, city, direction) VAL
 INSERT INTO Customer (password, name, mail, phone, country, city, direction) VALUES ('896', 'SARA',' SARA@GMAIL.COM', '605487215', 'Colombia', 'Armenia', 'CALLE 23 No. 12-11');
 
 
-CREATE TABLE IF NOT EXISTS Order (
+CREATE TABLE IF NOT EXISTS Orders (
 	id_orders  INT AUTO_INCREMENT PRIMARY KEY,
     CustomerId INT,
     quantity_products INT,
