@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS Order_details (
 			REFERENCES Orders (id_orders)
 			ON UPDATE RESTRICT ON DELETE CASCADE,
 	FOREIGN KEY (ProductId)
-			REFERENCES Product (ProductId)
+			REFERENCES Products (ProductId)
 			ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
@@ -65,8 +65,7 @@ CREATE TABLE IF NOT EXISTS Order_details (
 # PRODUCT
 
 CREATE TABLE IF NOT EXISTS Products (
-	id_product INT AUTO_INCREMENT PRIMARY KEY,
-    ProductId INT,
+    ProductId INT AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(100),
     product_price INT,
     product_description VARCHAR(500),
@@ -141,4 +140,3 @@ CREATE TABLE IF NOT EXISTS Kart (
 			REFERENCES Orders (id_orders)
 			ON UPDATE RESTRICT ON DELETE CASCADE
 ) ENGINE = INNODB;
-
