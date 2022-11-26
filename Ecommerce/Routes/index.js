@@ -5,11 +5,12 @@ var router 		= express.Router();
 //var passport 	= require('passport');
 
 var User = require('../models/user');
-//var Product = require('../models/product');
+
+
 
 // Home page
 //router.get('/', function(req, res, next) {
-	// If user is already logged in, then redirect to rooms page
+	// If user is already logged in, then redirect to products page
 //	if(req.isAuthenticated()){
 //		res.redirect('/products');
 //	}
