@@ -69,7 +69,7 @@ CreateKart(CustomerId, confirmation) {
 //agregar un producto al carrito
 ProductInsert(CustomerId, ProductId, Quantity) {
   return new Promise((resolve, reject) => {
-      conexion.query(`insert into carrito(CustomerKartId, ProductId, Quntity) values(?,?,?) `,
+      conexion.query(`insert into carrito(CustomerKartId, ProductId, Quantity) values(?,?,?) `,
           [CustomerKartId, ProductId, Quantity], (err, results) => {
               if (err) reject(err);
               else resolve(results.insertId);
