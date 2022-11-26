@@ -135,7 +135,6 @@ CREATE TABLE IF NOT EXISTS Kart (
     id_orders INT,
     total_price INT,
 	Quantity INT,
-    PRIMARY KEY (KartId, id_orders),
 	FOREIGN KEY (id_orders)
 			REFERENCES Orders (id_orders)
 			ON UPDATE RESTRICT ON DELETE CASCADE
