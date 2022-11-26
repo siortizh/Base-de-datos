@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS Product_category (
 # CATEGORY
 
 CREATE TABLE IF NOT EXISTS Category (
-	id_category INT AUTO_INCREMENT,
+	id_category INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(100),
     category_description VARCHAR(500)
 ) ENGINE = INNODB;
